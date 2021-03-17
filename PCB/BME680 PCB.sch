@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor:BME680 U1
+U 1 1 60507266
+P 4550 3000
+F 0 "U1" H 4121 3046 50  0000 R CNN
+F 1 "BME680" H 4121 2955 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 6000 2550 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 4550 2800 50  0001 C CNN
+	1    4550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6050794A
+P 4550 2300
+F 0 "#PWR?" H 4550 2150 50  0001 C CNN
+F 1 "+3V3" H 4565 2473 50  0000 C CNN
+F 2 "" H 4550 2300 50  0001 C CNN
+F 3 "" H 4550 2300 50  0001 C CNN
+	1    4550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2400 4450 2300
+Wire Wire Line
+	4450 2300 4550 2300
+Wire Wire Line
+	4550 2300 4650 2300
+Wire Wire Line
+	4650 2300 4650 2400
+Connection ~ 4550 2300
+$Comp
+L power:GND #PWR?
+U 1 1 605083AA
+P 4550 3800
+F 0 "#PWR?" H 4550 3550 50  0001 C CNN
+F 1 "GND" H 4555 3627 50  0000 C CNN
+F 2 "" H 4550 3800 50  0001 C CNN
+F 3 "" H 4550 3800 50  0001 C CNN
+	1    4550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3600 4450 3800
+Wire Wire Line
+	4450 3800 4550 3800
+Wire Wire Line
+	4650 3600 4650 3800
+Wire Wire Line
+	4650 3800 4550 3800
+Connection ~ 4550 3800
+Text Label 5350 3100 0    50   ~ 0
+SDA
+Wire Wire Line
+	5350 3100 5150 3100
+Text Label 5350 2900 0    50   ~ 0
+SCL
+Wire Wire Line
+	5350 2900 5150 2900
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 6050994A
+P 6800 7350
+F 0 "FID1" H 6885 7396 50  0000 L CNN
+F 1 "Fiducial" H 6885 7305 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 6800 7350 50  0001 C CNN
+F 3 "~" H 6800 7350 50  0001 C CNN
+	1    6800 7350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6050A0EA
+P 3100 2950
+F 0 "C1" H 3215 2996 50  0000 L CNN
+F 1 "100n" H 3215 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3138 2800 50  0001 C CNN
+F 3 "~" H 3100 2950 50  0001 C CNN
+	1    3100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6050A335
+P 3100 2700
+F 0 "#PWR?" H 3100 2550 50  0001 C CNN
+F 1 "+3V3" H 3115 2873 50  0000 C CNN
+F 2 "" H 3100 2700 50  0001 C CNN
+F 3 "" H 3100 2700 50  0001 C CNN
+	1    3100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2700 3100 2800
+$Comp
+L power:GND #PWR?
+U 1 1 6050A93E
+P 3100 3200
+F 0 "#PWR?" H 3100 2950 50  0001 C CNN
+F 1 "GND" H 3105 3027 50  0000 C CNN
+F 2 "" H 3100 3200 50  0001 C CNN
+F 3 "" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3200 3100 3100
+$Comp
+L Device:R R2
+U 1 1 6050BD60
+P 4700 5400
+F 0 "R2" H 4770 5446 50  0000 L CNN
+F 1 "R" H 4770 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 5400 50  0001 C CNN
+F 3 "~" H 4700 5400 50  0001 C CNN
+	1    4700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6050C1F3
+P 4550 5150
+F 0 "#PWR?" H 4550 5000 50  0001 C CNN
+F 1 "+3V3" H 4565 5323 50  0000 C CNN
+F 2 "" H 4550 5150 50  0001 C CNN
+F 3 "" H 4550 5150 50  0001 C CNN
+	1    4550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5250 4400 5150
+Wire Wire Line
+	4400 5150 4550 5150
+Wire Wire Line
+	4550 5150 4700 5150
+Wire Wire Line
+	4700 5150 4700 5250
+Connection ~ 4550 5150
+Text Label 4200 5650 2    50   ~ 0
+SCL
+Text Label 4200 5850 2    50   ~ 0
+SDA
+Wire Wire Line
+	4200 5850 4700 5850
+Wire Wire Line
+	4700 5850 4700 5550
+Wire Wire Line
+	4400 5550 4400 5650
+Wire Wire Line
+	4400 5650 4200 5650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6050F295
+P 5350 3450
+F 0 "#PWR?" H 5350 3300 50  0001 C CNN
+F 1 "+3V3" H 5365 3623 50  0000 C CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3300 5150 3600
+Wire Wire Line
+	5150 3600 5350 3600
+Wire Wire Line
+	5350 3600 5350 3450
+$Comp
+L power:GND #PWR?
+U 1 1 6050FE47
+P 5200 2500
+F 0 "#PWR?" H 5200 2250 50  0001 C CNN
+F 1 "GND" H 5205 2327 50  0000 C CNN
+F 2 "" H 5200 2500 50  0001 C CNN
+F 3 "" H 5200 2500 50  0001 C CNN
+	1    5200 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 2500 5200 2700
+Wire Wire Line
+	5200 2700 5150 2700
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 6051122B
+P 7000 2950
+F 0 "J1" H 6972 2924 50  0000 R CNN
+F 1 "JST_SH_SM04B-SRSS-TB" H 6972 2833 50  0000 R CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 7000 2950 50  0001 C CNN
+F 3 "~" H 7000 2950 50  0001 C CNN
+	1    7000 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60511D50
+P 6150 3400
+F 0 "#PWR?" H 6150 3150 50  0001 C CNN
+F 1 "GND" H 6155 3227 50  0000 C CNN
+F 2 "" H 6150 3400 50  0001 C CNN
+F 3 "" H 6150 3400 50  0001 C CNN
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3400 6150 2850
+Wire Wire Line
+	6150 2850 6800 2850
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60512CD9
+P 6250 2750
+F 0 "#PWR?" H 6250 2600 50  0001 C CNN
+F 1 "+3V3" H 6265 2923 50  0000 C CNN
+F 2 "" H 6250 2750 50  0001 C CNN
+F 3 "" H 6250 2750 50  0001 C CNN
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2750 6250 2950
+Wire Wire Line
+	6250 2950 6800 2950
+Text Label 6650 3050 2    50   ~ 0
+SDA
+Wire Wire Line
+	6650 3050 6800 3050
+Text Label 6650 3150 2    50   ~ 0
+SCL
+Wire Wire Line
+	6650 3150 6800 3150
+$Comp
+L Device:R R1
+U 1 1 6050B841
+P 4400 5400
+F 0 "R1" H 4470 5446 50  0000 L CNN
+F 1 "R" H 4470 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 5400 50  0001 C CNN
+F 3 "~" H 4400 5400 50  0001 C CNN
+	1    4400 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 4250 4900 0    50   ~ 0
+I2C pullup resistors\n2k2 - 10k
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6052D857
+P 6800 7150
+F 0 "H1" H 6900 7196 50  0000 L CNN
+F 1 "MountingHole" H 6900 7105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6800 7150 50  0001 C CNN
+F 3 "~" H 6800 7150 50  0001 C CNN
+	1    6800 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 60530CFE
+P 6800 7600
+F 0 "FID2" H 6885 7646 50  0000 L CNN
+F 1 "Fiducial" H 6885 7555 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 6800 7600 50  0001 C CNN
+F 3 "~" H 6800 7600 50  0001 C CNN
+	1    6800 7600
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
